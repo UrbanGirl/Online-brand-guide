@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Logo from './assets/Urbansoft-Primary-Logo.svg'
+import WhiteLogo from './assets/Urbansoft-White-logo.svg'
 import './style.css'
 
 function App() {
@@ -105,31 +106,26 @@ function Header(){
 }
 
 function LogoSection(){
-  // const {Lightmode, setLightmode} = useState(false);
-
+  const [DarkMode, setDarkMode] = useState(false);
 
   return(
-    <div className='Logo-container' id='Logo'>
+    <div className={`Logo-container ${DarkMode ? "black-mode-bg" : "white-mode-bg"}`} id='Logo'>
       <div className='Logo-section'>
         <div className='flex'>
           <div className='logo-description'>
-            <h1>Metaphor and symbol</h1>
-            <p>The logo metaphor is based on «slash» — one of the basic elements of an Internet address. It works as a symbol of nesting, denoting the strategy of Rambler.ru as a single portal on whose services you can find solutions to any issues.</p>
+            <h1 className={` ${DarkMode ? "white-h1" : "black-h1"} `}>Metaphor and symbol</h1>
+            <p className={` ${DarkMode ? "white-p" : "black-p"} `}>The logo metaphor is based on «slash» — one of the basic elements of an Internet address. It works as a symbol of nesting, denoting the strategy of Rambler.ru as a single portal on whose services you can find solutions to any issues.</p>
           </div>
           <div className='System-modes'>
-            <a href='#'>
-              <div className='box box-white '></div>
-            </a>
-            <a href='#'>
-              <div className='box box-black selected-mode'></div>
-            </a>
+            <div className={`box box-white ${DarkMode ? "" : "selected-mode"}`} onClick={() => setDarkMode(false)}></div>
+            <div className={`box box-black ${DarkMode ? "selected-mode" : "" }`} onClick={() => setDarkMode(true)}></div>
           </div>
         </div>
         <div className='logo-image'>
-          <img src={Logo} alt='white-mode-logo' />
+          {DarkMode ? <img src={WhiteLogo} alt='normal-logo' /> : <img src={Logo} alt='white-mode-logo' />}
         </div>
         <div className='logo-ctas flex'>
-          <p>Download Logo</p>
+          <p className={` ${DarkMode ? "white-p" : "black-p"} `}>Download Logo</p>
           <a href='#'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E529B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-vector-square-icon lucide-vector-square"><path d="M19.5 7a24 24 0 0 1 0 10"/><path d="M4.5 7a24 24 0 0 0 0 10"/><path d="M7 19.5a24 24 0 0 0 10 0"/><path d="M7 4.5a24 24 0 0 1 10 0"/><rect x="17" y="17" width="5" height="5" rx="1"/><rect x="17" y="2" width="5" height="5" rx="1"/><rect x="2" y="17" width="5" height="5" rx="1"/><rect x="2" y="2" width="5" height="5" rx="1"/></svg></a>
           <a href='#'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E529B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-icon lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></a>
         </div>

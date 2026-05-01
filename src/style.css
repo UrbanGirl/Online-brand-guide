@@ -246,11 +246,19 @@ body{
 
 /* Logo section */
 .Logo-container {
-  background-color: #4D4D4D;
+  /* background-color: #4D4D4D; */
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 350vh;
+}
+
+.black-mode-bg{
+  background-color: #4D4D4D;
+}
+
+.white-mode-bg{
+  background-color: white;
 }
 
 .Logo-section{
@@ -260,17 +268,33 @@ body{
 
 .Logo-section .logo-description h1{
   font-size: 35px;
-  color: #7D7D7D;
+  /* color: #7D7D7D; */
 }
 
 .Logo-section .logo-description p{
   font-family: 'Montserrat';
-  color: black;
+  /* color: black; */
   line-height: 150%;
   width: 75%;
   text-align: justify;
   font-size: 15px;
   font-weight: medium;
+}
+
+.white-h1{
+  color: white;
+}
+
+.white-p{
+  color: rgba(255, 255, 255, 0.769);
+}
+
+.black-h1{
+  color: #7D7D7D;
+}
+
+.black-p{
+  color: black;
 }
 
 .Logo-section .logo-image{
@@ -300,6 +324,7 @@ body{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 2px solid #7d7d7d3e;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .Logo-section .flex .System-modes .box-white{
