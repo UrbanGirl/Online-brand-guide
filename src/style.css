@@ -10,7 +10,7 @@ body{
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 350vh;
+  /* height: 350vh; */
 }
 
 .page-content {
@@ -250,7 +250,6 @@ body{
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 350vh;
 }
 
 .black-mode-bg{
@@ -266,17 +265,18 @@ body{
   padding: 125px 0px;
 }
 
-.Logo-section .logo-description h1{
+.logo-description h1{
   font-size: 35px;
   /* color: #7D7D7D; */
 }
 
-.Logo-section .logo-description p{
+.logo-description p{
   font-family: 'Montserrat';
   /* color: black; */
   line-height: 150%;
-  width: 75%;
-  text-align: justify;
+  width: 90%;
+  /* text-align: justify; */
+  text-align: left;
   font-size: 15px;
   font-weight: medium;
 }
@@ -302,7 +302,7 @@ body{
   margin: 50px 0px;
 }
 
-.Logo-section .logo-ctas{
+.logo-ctas{
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -343,4 +343,40 @@ body{
 .Logo-section .flex .System-modes .box:hover{
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border: 2px solid #7E529B;
+}
+
+/* Vertical Logo */
+.Vertical-logo{
+  width: 75%;
+}
+
+.Vertical-logo .flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Vertical-logo .flex .desc-and-ctas{
+  width: 40%;
+}
+
+.Vertical-logo .flex .Logo{
+  background-color: #b8b7b71c;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.Vertical-logo .flex .Logo img{
+  width: 100px;
+  height: auto;
+}
+
+.logo-ctas{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
 }

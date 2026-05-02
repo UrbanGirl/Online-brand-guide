@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Logo from './assets/Urbansoft-Primary-Logo.svg'
 import WhiteLogo from './assets/Urbansoft-White-logo.svg'
+import VLogo from './assets/Urbansoft-Vertical-Logo.svg'
 import './style.css'
 
 function App() {
@@ -40,6 +41,7 @@ function MainScreen(){
       <div className='page-content'>
         <Header />
         <LogoSection />
+        <VerticalLogo />
       </div>
     </div>
   )
@@ -128,6 +130,31 @@ function LogoSection(){
           <p className={` ${DarkMode ? "white-p" : "black-p"} `}>Download Logo</p>
           <a href='#'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E529B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-vector-square-icon lucide-vector-square"><path d="M19.5 7a24 24 0 0 1 0 10"/><path d="M4.5 7a24 24 0 0 0 0 10"/><path d="M7 19.5a24 24 0 0 0 10 0"/><path d="M7 4.5a24 24 0 0 1 10 0"/><rect x="17" y="17" width="5" height="5" rx="1"/><rect x="17" y="2" width="5" height="5" rx="1"/><rect x="2" y="17" width="5" height="5" rx="1"/><rect x="2" y="2" width="5" height="5" rx="1"/></svg></a>
           <a href='#'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E529B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-icon lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function VerticalLogo(){
+  return(
+    <div className='center-container'>
+      <div className='Vertical-logo'>
+        <div className='flex'>
+          <div className='desc-and-ctas'>
+            <div className='logo-description'>
+              <h1>Security zone</h1>
+              <p>The logo needs «air» – a security zone around it, which should not include other objects. Such a security zone is determined by the height of the sign «slash». Compliance with the security zone guarantees the correct perception of the logoblock.</p>
+            </div>
+            <div className='logo-ctas'>
+              <p>Download Logo</p>
+              <a href='#'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E529B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-vector-square-icon lucide-vector-square"><path d="M19.5 7a24 24 0 0 1 0 10"/><path d="M4.5 7a24 24 0 0 0 0 10"/><path d="M7 19.5a24 24 0 0 0 10 0"/><path d="M7 4.5a24 24 0 0 1 10 0"/><rect x="17" y="17" width="5" height="5" rx="1"/><rect x="17" y="2" width="5" height="5" rx="1"/><rect x="2" y="17" width="5" height="5" rx="1"/><rect x="2" y="2" width="5" height="5" rx="1"/></svg></a>
+              <a href='#'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E529B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-icon lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></a>
+            </div>
+          </div>
+          <div className='Logo'>
+            <img src={VLogo} alt='Vertical Logo'/>
+          </div>
         </div>
       </div>
     </div>
