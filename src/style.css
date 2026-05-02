@@ -347,6 +347,7 @@ body{
 
 /* Vertical Logo */
 .Vertical-logo{
+  margin-top: 100px;
   width: 75%;
 }
 
@@ -379,4 +380,99 @@ body{
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+}
+
+/* Colors */
+.center-container .Colors{
+  margin-top: 100px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.center-container .Colors .left-side{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.center-container .Colors .right-side{
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.big-color-box{
+  width: 90%;
+  height: 50px;
+}
+
+.small-color-box{
+  height: 50px;
+}
+
+.hex-royal-lilac{
+  background-color: #7E529B;
+}
+
+.hex-poseidon{
+  background-color: #1a3c5b;
+}
+
+.hex-true-teal{
+  background-color: #0f8592;
+}
+
+.hex-tin{
+  background-color: #8f8f8f;
+}
+
+.hex-berry-patch{
+  background-color: #8c3b61;
+}
+
+.hex-red{
+  background-color: #ff564e;
+}
+
+.hex-green{
+  background-color: #28bc00;
+}
+
+.palette h5{
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.palette p{
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 2px;
+  font-size: 15px;
+  color: #a58ac1;
+}
+
+.palette .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.palette .flex .color-section{
+  width: 47%;
+}
+
+.right-side .logo-ctas a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #7f58a6;
+  text-decoration: none;
 }

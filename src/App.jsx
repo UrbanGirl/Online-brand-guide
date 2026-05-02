@@ -42,6 +42,7 @@ function MainScreen(){
         <Header />
         <LogoSection />
         <VerticalLogo />
+        <Color />
       </div>
     </div>
   )
@@ -71,7 +72,7 @@ function NavigationBar() {
 
       <div className="links">
         <a href='#Logo'>Logo</a>
-        <a href='#'>Graphics</a>
+        <a href='#graphics'>Graphics</a>
         <a href='#'>Typography</a>
         <a href='#'>Stationary</a>
       </div>
@@ -154,6 +155,79 @@ function VerticalLogo(){
           </div>
           <div className='Logo'>
             <img src={VLogo} alt='Vertical Logo'/>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Color(){
+  return (
+    <div className="center-container flex" id='graphics'>
+      <div className='Colors'>
+        <div className='left-side'>
+          <div className='palette'>
+            <h3>Blue palette</h3>
+            <div className='color-section'>
+              <div className='big-color-box hex-royal-lilac'></div>
+              <h5>Royal Lilac</h5>
+              <p className='hex'>#7f58a6</p>
+            </div>
+          </div>
+          <div className='palette'>
+            {/* <h3>gray palette</h3> */}
+            <div className='flex'>
+              <div className='color-section'>
+                <div className='small-color-box hex-true-teal'></div>
+                <h5>True Teal</h5>
+                <p className='hex'>#0f8592</p>
+              </div>
+              <div className='color-section'>
+                <div className='small-color-box hex-poseidon'></div>
+                <h5>Poseidon</h5>
+                <p className='hex'>#1a3c5b</p>
+              </div>
+            </div>
+          </div>
+          <div className='palette'>
+            {/* <h3>gray palette</h3> */}
+              <div className='flex'>
+                <div className='color-section'>
+                  <div className='small-color-box hex-tin'></div>
+                  <h5>Tin</h5>
+                  <p className='hex'>#8f8f8f</p>
+                </div>
+                <div className='color-section'>
+                  <div className='small-color-box hex-berry-patch'></div>
+                  <h5>Berry Patch</h5>
+                  <p className='hex'>#8c3b61</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div className='right-side'>
+          <div className='logo-description'>
+            <h1>Working with color</h1>
+            <p>Work with color is based on the use of neutral and signature gray and black palettes as the basis and signature blue for placing accents. Due to the size of the audience, special attention is paid to the readability of shades of gray and their correct interpretation on as many monitors as possible.</p>
+            <div className='logo-ctas'>
+              <a target='_blank' href='https://maketintsandshades.com/#colors=7F58A6,1A3C5B,8C3B61,0F8592,8F8F8F&hashtag=0&steps=10'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E529B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Color Tints and Shades</a>
+            </div>
+          </div>
+          <div className='palette'>
+            <h3>Accent palette</h3>
+            <div className='flex'>
+                <div className='color-section'>
+                  <div className='small-color-box hex-red'></div>
+                  <h5>Red</h5>
+                  <p className='hex'>#8f8f8f</p>
+                </div>
+                <div className='color-section'>
+                  <div className='small-color-box hex-green'></div>
+                  <h5>Green</h5>
+                  <p className='hex'>#8c3b61</p>
+                </div>
+              </div>
           </div>
         </div>
       </div>
